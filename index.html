@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1400667957768581'); // Remplacez par votre ID Pixel
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1" // Remplacez par votre ID Pixel
+    /></noscript>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script> <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NZDBJMMCWT'); // Remplacez par votre ID GA4
+
+      // Événement GA4 pour la vue de la page de demande d'avis
+      gtag('event', 'view_review_request_page', {
+        'product_name': 'Guide Ultime Immigration Canada 2025' // Adaptez si nécessaire
+      });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partagez Votre Expérience - Guide Ultime Immigration Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Styles globaux, container, header, footer, responsivité comme avant */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; margin: 0; background-color: #f8f8f8; color: #333; overflow-x: hidden; font-size: 18px; /* Taille légèrement réduite pour cette page */ }
+        .container { max-width: 800px; /* Conteneur un peu plus étroit */ margin: 0 auto; padding: 0 20px; }
+
+        /* En-tête (identique) */
+        .site-header { background-color: #ffffff; padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
+        .site-header .container { display: flex; justify-content: center; align-items: center; }
+        .site-logo img { height: 50px; width: auto; max-width: 100%; display: block; }
+
+        /* Section Principale Demande d'Avis */
+        .review-request-section { background-color: #fff9c4; /* Jaune pâle feedback */ padding: 70px 0; text-align: center; }
+        .review-request-section h1 { font-size: 34px; color: #fbc02d; /* Jaune feedback */ margin-bottom: 20px; line-height: 1.2; }
+        .review-request-section p { font-size: 19px; color: #333; margin-bottom: 20px; max-width: 650px; margin-left: auto; margin-right: auto; }
+        .review-request-section .importance-text { font-size: 17px; color: #555; margin-bottom: 30px; font-style: italic; }
+        .review-request-section i.fas { font-size: 50px; color: #fbc02d; margin-bottom: 20px; }
+
+        /* Bouton Laisser Avis */
+        .review-button { display: inline-block; background-color: #ff9800; /* Orange pour action/avis */ color: white; font-size: 20px; font-weight: 600; padding: 15px 35px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .review-button:hover { background-color: #f57c00; /* Orange plus foncé */ transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .review-button i { margin-right: 10px; }
+
+        /* Pied de Page (identique) */
+        footer { background-color: #212529; color: #adb5bd; padding: 40px 0; font-size: 15px; text-align: center; margin-top: 0; }
+        footer .container { display: flex; flex-direction: column; align-items: center; }
+        footer p { margin-bottom: 10px; }
+        .footer-links { margin-bottom: 10px; }
+        .footer-links a { color: #adb5bd; text-decoration: none; margin: 0 10px; transition: color 0.3s ease; }
+        .footer-links a:hover { color: #ffffff; }
+        footer .contact-info { font-size: 14px; color: #adb5bd; margin-top: 5px; }
+
+        /* Responsivité (simplifiée, à adapter si besoin comme avant) */
+         @media (max-width: 768px) {
+             .review-request-section h1 { font-size: 28px; }
+             .review-request-section p { font-size: 17px; }
+             .review-button { font-size: 18px; padding: 12px 25px; }
+             footer { padding: 30px 0; font-size: 14px; }
+         }
+         @media (max-width: 480px) {
+             .review-request-section h1 { font-size: 24px; }
+             .review-request-section p { font-size: 16px; }
+             .review-button { font-size: 17px; padding: 10px 20px; }
+             footer { padding: 25px 0; font-size: 13px; }
+             .footer-links { flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px; }
+         }
+
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada">
+            </div>
+        </div>
+    </header>
+
+    <section class="review-request-section" data-aos="fade-up">
+        <div class="container">
+            <i class="fas fa-star"></i> <h1>Votre Avis Nous est Précieux !</h1>
+            <p>Nous espérons sincèrement que le Guide Ultime (et sa récente mise à jour !) vous apporte une aide concrète dans votre projet d'immigration au Canada.</p>
+            <p class="importance-text">Votre retour d'expérience est essentiel : il nous aide à nous améliorer et guide les futurs candidats à faire le bon choix en toute confiance.</p>
+            <p>Si vous êtes satisfait(e) de votre expérience, accepteriez-vous de prendre quelques instants pour la partager ?</p>
+
+            <a href="https://uowkorva.mychariow.com/purchase/SALESJFNFC2N2QR2GTP/rate?token=5c66c4ecf1fad0227d1e3541eb1e548e47abacf31b05b0fa70cbcedf6a2df3b1.1743832982" class="review-button" data-aos="zoom-in" data-aos-delay="200"
+               onclick="gtag('event', 'click_leave_review', { 'product_name': 'Guide Ultime Immigration Canada 2025' });">
+                <i class="fas fa-pencil-alt"></i> Laisser Mon Avis
+            </a>
+            <p style="margin-top: 20px; font-size: 15px; color: #777;">(Vous serez redirigé(e) vers notre plateforme d'avis sécurisée)</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span>. Cap Vers le Canada. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Conditions Générales de Vente</a> |
+                <a href="#">Politique de Confidentialité</a> |
+                <a href="#">Mentions Légales</a>
+            </div>
+            <p class="contact-info">Email Support: capsverslecanada@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
