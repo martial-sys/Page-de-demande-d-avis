@@ -1,128 +1,349 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1400667957768581'); // Remplacez par votre ID Pixel
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1" // Remplacez par votre ID Pixel
-    /></noscript>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script> <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NZDBJMMCWT'); // Remplacez par votre ID GA4
-
-      // Événement GA4 pour la vue de la page de mise à jour
-      gtag('event', 'view_update_page', {
-        'product_name': 'Guide Ultime Immigration Canada 2025' // Adaptez si nécessaire
-      });
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Mise à Jour est Disponible! - Guide Ultime Immigration Canada</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Avis Clients - Guide Ultime Immigration Canada</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <style>
-        /* Styles globaux et resets */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; margin: 0; background-color: #f8f8f8; color: #333; overflow-x: hidden; font-size: 19px; }
-        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-
-        /* En-tête */
-        .site-header { background-color: #ffffff; padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
-        .site-header .container { display: flex; justify-content: center; align-items: center; }
-        .site-logo img { height: 50px; width: auto; max-width: 100%; display: block; } /* Styles repris de */
-
-        /* Section Principale Mise à Jour */
-        .update-section { background-color: #e3f2fd; /* Bleu pâle pour info/mise à jour */ padding: 80px 0; text-align: center; }
-        .update-section h1 { font-size: 38px; color: #0288d1; /* Bleu info */ margin-bottom: 20px; line-height: 1.2; }
-        .update-section p { font-size: 20px; color: #333; margin-bottom: 25px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .update-section i.fas { font-size: 60px; color: #0288d1; /* Bleu info */ margin-bottom: 20px; }
-
-        /* Section Accès aux Fichiers */
-        .access-section { background-color: #ffffff; padding: 60px 0; text-align: center; }
-        .access-section h2 { font-size: 30px; color: #003366; margin-bottom: 30px; position: relative; display: inline-block; }
-        .access-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #0056b3; margin: 10px auto 0; border-radius: 2px; } /* Styles repris de */
-        .access-section p { font-size: 19px; color: #555; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; } /* Styles repris de */
-
-        /* Boutons de Téléchargement */
-        .download-button { display: inline-block; background-color: #007bff; color: white; font-size: 22px; font-weight: 600; padding: 15px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); } /* Styles repris de */
-        .download-button:hover { background-color: #0056b3; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); } /* Styles repris de */
-        .download-button i { margin-right: 10px; } /* Styles repris de */
-
-        /* Boutons Bonus */
-        .bonus-button { display: inline-block; background-color: #555; color: white; font-size: 18px; font-weight: 600; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 10px; transition: background-color 0.3s ease, transform 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } /* Styles repris de */
-        .bonus-button:hover { background-color: #333; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); } /* Styles repris de */
-        .bonus-button i { margin-right: 8px; } /* Styles repris de */
-        .bonus-links-container { margin-top: 20px; } /* Styles repris de */
-
-        /* Section Support */
-        .support-section { background-color: #f0f0f0; /* Gris clair neutre */ padding: 60px 0; text-align: center; }
-        .support-section h2 { font-size: 30px; color: #555; margin-bottom: 30px; position: relative; display: inline-block; }
-        .support-section h2::after { content: ''; display: block; width: 80px; height: 4px; background-color: #777; margin: 10px auto 0; border-radius: 2px; }
-        .support-section p { font-size: 19px; color: #555; margin-bottom: 15px; max-width: 700px; margin-left: auto; margin-right: auto; } /* Styles repris de */
-        .contact-links { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; } /* Styles repris de */
-        .contact-links a { display: inline-flex; align-items: center; font-size: 19px; font-weight: 600; text-decoration: none; padding: 10px 15px; border-radius: 5px; transition: opacity 0.3s ease; } /* Styles repris de */
-        .contact-links a i { margin-right: 8px; font-size: 22px; } /* Styles repris de */
-        .contact-links .email-link { color: #0056b3; border: 1px solid #0056b3; } /* Styles repris de */
-        .contact-links .email-link:hover { opacity: 0.8; } /* Styles repris de */
-        .contact-links .whatsapp-link { background-color: #25D366; color: white; } /* Styles repris de */
-        .contact-links .whatsapp-link:hover { background-color: #1DA851; } /* Styles repris de */
-
-        /* Pied de Page */
-        footer { background-color: #212529; color: #adb5bd; padding: 40px 0; font-size: 15px; text-align: center; margin-top: 0; } /* Styles repris de */
-        footer .container { display: flex; flex-direction: column; align-items: center; } /* Styles repris de */
-        footer p { margin-bottom: 10px; } /* Styles repris de */
-        .footer-links { margin-bottom: 10px; } /* Styles repris de */
-        .footer-links a { color: #adb5bd; text-decoration: none; margin: 0 10px; transition: color 0.3s ease; } /* Styles repris de */
-        .footer-links a:hover { color: #ffffff; } /* Styles repris de */
-        footer .contact-info { font-size: 14px; color: #adb5bd; margin-top: 5px; } /* Styles repris de */
-
-        /* Responsivité (adaptée de) */
-        @media (max-width: 768px) {
-            .update-section h1 { font-size: 32px; }
-            .update-section p { font-size: 18px; }
-            .update-section i.fas { font-size: 50px; }
-            .access-section h2, .support-section h2 { font-size: 26px; margin-bottom: 25px; }
-            .access-section h2::after, .support-section h2::after { width: 60px; height: 3px; margin-top: 8px; }
-            .access-section p, .support-section p { font-size: 17px; margin-bottom: 15px; }
-            .access-section, .support-section { padding: 50px 0; }
-            .download-button { font-size: 20px; padding: 12px 25px; }
-            .download-button i { font-size: 20px; margin-right: 8px; }
-            .contact-links { flex-direction: column; gap: 10px; align-items: center; }
-            .contact-links a { font-size: 17px; padding: 8px 12px; }
-            .contact-links a i { font-size: 20px; margin-right: 6px; }
-            footer { padding: 30px 0; font-size: 14px; }
+        /* Styles globaux et resets adaptés de la page de vente */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-         @media (max-width: 480px) {
-            .update-section h1 { font-size: 26px; }
-            .update-section p { font-size: 16px; }
-            .update-section i.fas { font-size: 40px; }
-            .access-section h2, .support-section h2 { font-size: 22px; margin-bottom: 20px; }
-            .access-section h2::after, .support-section h2::after { width: 50px; height: 3px; margin-top: 6px; }
-            .access-section p, .support-section p { font-size: 16px; margin-bottom: 10px; }
-            .access-section, .support-section { padding: 40px 0; }
-            .download-button { font-size: 18px; padding: 10px 20px; }
-            .download-button i { font-size: 18px; margin-right: 6px; }
-             .contact-links a { font-size: 16px; padding: 6px 10px; }
-             .contact-links a i { font-size: 18px; margin-right: 5px; }
-             footer { padding: 25px 0; font-size: 13px; }
-             .footer-links { flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f8f8f8; /* Fond très légèrement grisé */
+            color: #333; /* Couleur de texte principale */
+            overflow-x: hidden; /* Empêche le débordement horizontal */
+            font-size: 19px; /* Taille du texte normal */
+        }
+
+        .container {
+            max-width: 800px; /* Largeur maximale du contenu principal */
+            margin: 0 auto; /* Centrer le conteneur */
+            padding: 0 20px; /* Espacement intérieur */
+        }
+
+        /* En-tête du Site avec Logo adapté */
+        .site-header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .site-header .container {
+            display: flex;
+            justify-content: center; /* Centrer le logo */
+            align-items: center;
+        }
+
+        .site-logo img {
+            height: 50px; /* Ajustez selon votre logo */
+            width: auto;
+            max-width: 100%;
+            display: block;
+             /* L'URL du logo est maintenant directement dans l'attribut src de la balise img dans le HTML */
+        }
+
+        /* Styles génériques pour les titres de section H2 (adaptés) */
+         section h2 {
+             font-size: 32px;
+             color: #003366; /* Bleu marine par défaut */
+             margin-bottom: 20px;
+             position: relative;
+             display: inline-block;
+             text-align: center;
          }
+
+         section h2::after {
+             content: "";
+             display: block;
+             width: 80px; /* Ligne plus courte */
+             height: 4px; /* Ligne moins épaisse */
+             background-color: #d9534f; /* Ligne rouge par défaut */
+             margin: 10px auto 0; /* Centrer la ligne */
+             border-radius: 3px;
+         }
+
+
+        /* Section de Collecte de l'Avis (Formulaire) */
+        .review-form-section { /* Nom de classe changé pour plus de clarté */
+            padding: 60px 0;
+            text-align: center;
+            background-color: #ffffff; /* Fond blanc pour la section */
+            margin-top: 20px; /* Espace après le header */
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Styles du Formulaire */
+        .review-form {
+            text-align: left; /* Alignement du texte des labels/inputs */
+            max-width: 500px; /* Limiter la largeur du formulaire */
+            margin: 0 auto; /* Centrer le formulaire */
+            padding: 20px;
+            background-color: #f8f8f8; /* Fond léger pour le formulaire */
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block; /* Label sur sa propre ligne */
+            font-size: 17px;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%; /* Prend toute la largeur du conteneur parent */
+            padding: 12px;
+            font-size: 17px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Inclure padding et bordure dans la largeur */
+            font-family: 'Poppins', sans-serif; /* Conserver la police */
+        }
+
+         .form-group textarea {
+            resize: vertical; /* Permet de redimensionner verticalement */
+            min-height: 120px; /* Hauteur minimale pour l'avis */
+         }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 8px;
+            vertical-align: middle; /* Aligner la case avec le texte */
+        }
+
+        .form-group .checkbox-label {
+             display: inline-block; /* Afficher le label à côté de la checkbox */
+             font-weight: 400; /* Poids normal pour le texte */
+             font-size: 16px;
+             color: #555;
+             vertical-align: middle;
+        }
+
+        /* Styles pour le système de notation par étoiles dans le formulaire */
+        .rating {
+            display: inline-block;
+            font-size: 0; /* Cache les radios boutons */
+        }
+
+        .rating label {
+            font-size: 30px; /* Taille des étoiles */
+            color: #ccc; /* Couleur étoile vide */
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        /* Styles étoiles pour la collection (interactif) */
+        .rating input[type="radio"]:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffc100; /* Couleur étoile pleine / au survol (Jaune) */
+        }
+
+        /* Style du Bouton Soumettre (adapté des CTA de la page de vente) */
+        .submit-button {
+            display: inline-block;
+            background-color: #28a745; /* Vert Succès */
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%; /* Bouton pleine largeur */
+        }
+
+        .submit-button:hover {
+            background-color: #218838; /* Vert plus foncé */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Section Message de Remerciement (cachée par défaut) */
+        .thank-you-message {
+            display: none; /* Caché par défaut */
+            text-align: center;
+            padding: 40px;
+            margin-top: 30px;
+            background-color: #e9f5e5; /* Fond vert très pâle */
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            color: #155724;
+            font-size: 18px;
+        }
+
+        .thank-you-message h2 {
+            color: #155724;
+            margin-bottom: 15px;
+        }
+
+
+        /* Section d'Affichage des Avis */
+        .displayed-reviews-section { /* Nouvelle section */
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f8f8f8; /* Fond légèrement grisé */
+        }
+
+        .reviews-list { /* Conteneur pour les avis individuels */
+             margin-top: 40px;
+             text-align: left; /* Avis alignés à gauche */
+        }
+
+        /* Style d'un Avis Individuel (inspiré des témoignages sur la page de vente) */
+        .review-item {
+            background-color: #ffffff; /* Fond blanc */
+            padding: 30px;
+            margin-bottom: 20px; /* Espace entre les avis */
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            border-left: 5px solid #0056b3; /* Bordure bleue (couleur différente des témoignages pour varier) */
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .review-item .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+             flex-wrap: wrap; /* Permet le retour à la ligne si l'écran est petit */
+        }
+
+        .review-item .reviewer-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #003366; /* Nom en bleu marine */
+             margin-right: 10px; /* Espace entre nom et étoiles sur la même ligne */
+        }
+
+         /* Styles étoiles pour l'affichage (non interactif) */
+         .review-item .displayed-rating {
+             color: #ffc100; /* Étoiles pleines jaunes */
+             font-size: 20px; /* Taille des étoiles affichées */
+         }
+         .review-item .displayed-rating .empty-star {
+             color: #ccc; /* Couleur des étoiles vides */
+         }
+
+
+        .review-item .review-text {
+            font-size: 17px;
+            color: #444;
+             margin-bottom: 10px;
+        }
+
+         .review-item .review-date { /* Optionnel: afficher la date si collectée */
+            font-size: 13px;
+            color: #888;
+             text-align: right;
+         }
+
+
+        /* Pied de Page adapté */
+        footer {
+            background-color: #212529; /* Fond sombre */
+            color: #adb5bd; /* Texte gris clair */
+            padding: 30px 0;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 40px; /* Espace au-dessus du footer */
+        }
+
+        footer .container {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+         footer .footer-links {
+            margin-bottom: 8px;
+         }
+
+        footer .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-links a:hover {
+             color: #ffffff; /* Blanc au survol */
+        }
+
+
+        /* Media Queries pour Responsivité (adaptées) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* Légèrement réduit */
+            }
+            .container {
+                padding: 0 15px;
+            }
+            .site-logo img {
+                height: 40px;
+            }
+
+            /* Form Section */
+            .review-form-section { padding: 40px 0;}
+            .review-form-section h2 { font-size: 28px;}
+            .review-form-section h2::after { width: 60px; height: 3px;}
+             .review-form-section p { font-size: 16px; margin-bottom: 20px;}
+            .review-form { padding: 15px;}
+            .form-group label { font-size: 15px;}
+             .form-group input[type="text"], .form-group input[type="email"], .form-group textarea { padding: 10px; font-size: 15px;}
+            .rating label { font-size: 25px; padding: 0 3px;}
+            .submit-button { font-size: 17px; padding: 10px 20px;}
+             .thank-you-message { padding: 25px; font-size: 16px;}
+              .thank-you-message h2 { font-size: 20px;}
+
+            /* Display Section */
+             .displayed-reviews-section { padding: 40px 0;}
+             .displayed-reviews-section h2 { font-size: 28px; margin-bottom: 30px;}
+             .displayed-reviews-section h2::after { width: 60px; height: 3px;}
+             .review-item { padding: 20px; margin-bottom: 15px; font-size: 16px;}
+             .review-item .review-header { flex-direction: column; align-items: flex-start; margin-bottom: 10px;} /* Empile nom et étoiles */
+             .review-item .reviewer-name { font-size: 17px; margin-bottom: 5px; margin-right: 0;}
+              .review-item .displayed-rating { font-size: 18px;} /* Taille étoiles */
+             .review-item .review-text { font-size: 16px; margin-bottom: 8px;} /* Texte avis */
+             .review-item .review-date { font-size: 12px; text-align: left; width: 100%;} /* Date alignée à gauche sous le texte si empilé */
+
+
+             footer { padding: 15px 0; font-size: 12px;}
+              footer p { margin-bottom: 5px;}
+               footer .footer-links { margin-bottom: 5px;}
+              footer .footer-links a { margin: 0 5px;}
+        }
+
     </style>
 </head>
 <body>
@@ -130,91 +351,379 @@
     <header class="site-header">
         <div class="container">
             <div class="site-logo">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada">
-            </div>
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada"> </div>
         </div>
     </header>
 
-    <section class="update-section" data-aos="fade-up">
+    <section class="review-form-section">
         <div class="container">
-            <i class="fas fa-sync-alt"></i> <h1>Votre Mise à Jour est Disponible !</h1>
-            <p>Merci pour votre fidélité ! La nouvelle version du <strong>Guide Ultime Pour Immigrer Au Canada | Édition 2025</strong> et de vos bonus est prête.</p>
-            <p>Accédez dès maintenant aux dernières informations et ressources ci-dessous.</p>
-        </div>
-    </section>
-
-    <section class="access-section">
-        <div class="container" data-aos="fade-up">
-            <h2>Téléchargez la Nouvelle Édition :</h2>
-            <p>Cliquez sur le bouton ci-dessous pour obtenir la version la plus récente du guide principal en PDF.</p>
-             <a href="https://u.pcloud.link/publink/show?code=XZOfJm5Z410jJKmTAfmBa9lh91AcvL2rtTIk" class="download-button" data-aos="zoom-in" data-aos-delay="200"
-               onclick="gtag('event', 'download_update', { 'file_type': 'main_guide', 'product_name': 'Guide Ultime Immigration Canada 2025' });">
-                <i class="fas fa-download"></i> Télécharger le Guide Mis à Jour
-            </a>
-            <p style="margin-top: 20px; font-size: 15px; color: #777;">(Lien de téléchargement direct du fichier PDF actualisé)</p>
-        </div>
-    </section>
-
-     <section class="access-section" style="background-color: #f9f9f9;"> <div class="container" data-aos="fade-up">
-            <h2>Vos Bonus Actualisés et Accès :</h2>
-            <p>Retrouvez également les versions à jour de vos bonus et l'accès à la communauté.</p>
-            <div class="bonus-links-container">
-                 <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200"
-                   onclick="gtag('event', 'download_update', { 'file_type': 'bonus_cv_lm', 'product_name': 'Guide Ultime Immigration Canada 2025' });">
-                    <i class="fas fa-file-alt"></i> Télécharger Modèles CV + LM (MàJ)
-                </a>
-                 <a href="https://t.me/+FaDQIFJbfBthZDI8" target="_blank" class="bonus-button" style="background-color: #007bff;" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fas fa-users"></i> Accéder au Groupe Privé
-                </a>
-                 <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSIyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" style="background-color: #2e7d32;" data-aos="zoom-in" data-aos-delay="400"
-                   onclick="gtag('event', 'download_update', { 'file_type': 'bonus_guide', 'product_name': 'Guide Ultime Immigration Canada 2025' });">
-                    <i class="fas fa-book-reader"></i> Télécharger Guide Bonus (MàJ)
-                </a>
-                </div>
-             <p style="margin-top: 30px; font-size: 17px; color: #555;">
-                <strong>Rappel :</strong> Votre accès aux futures mises à jour est inclus et illimité. Vous serez notifié par email des prochaines publications majeures.
+            <h2>Laissez Votre Avis sur le Guide Ultime !</h2> <p>
+                Merci d'avoir choisi le Guide Ultime Immigration Canada. Votre expérience est précieuse et aidera d'autres personnes
+                dans leur propre projet. Partagez votre ressenti sincère pour éclairer la communauté !
             </p>
+
+            <form class="review-form" id="reviewForm" method="post">
+                <div class="form-group">
+                    <label for="name">Votre Prénom ou Initiales :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="review">Votre avis sur le Guide Ultime / Partagez votre expérience :</label>
+                    <textarea id="review" name="review" required></textarea>
+                </div>
+
+                <div class="form-group">
+                     <label>Votre note :</label>
+                     <div class="rating">
+                         <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="Excellent">★</label>
+                         <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="Très bien">★</label>
+                         <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="Bien">★</label>
+                         <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="Moyen">★</label>
+                         <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="Mauvais">★</label>
+                     </div>
+                 </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="consent" name="consent" value="yes" required>
+                    <label for="consent" class="checkbox-label">
+                        J'accepte que mon avis soit potentiellement publié (en tout ou partie, mon nom pourra être anonymisé ou réduit à mes initiales).
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">Soumettre Mon Avis</button>
+            </form>
+
+             <div class="thank-you-message" id="thankYouMessage">
+                <h2>Merci pour Votre Avis !</h2>
+                <p>Votre retour a bien été reçu. Il est très précieux pour nous et pour la communauté.</p>
+                 <p>Votre avis sera bientôt visible sur cette page !</p> </div>
+
         </div>
     </section>
 
-    <section class="support-section">
-        <div class="container" data-aos="fade-up">
-            <h2>Besoin d'Aide ?</h2>
-            <p>Si vous rencontrez un problème pour télécharger les fichiers mis à jour ou si vous avez une question concernant l'accès, contactez notre support.</p>
-            <p style="font-size: 15px; color: #777;">(Pour les questions techniques liées à cette mise à jour uniquement. Pour les questions d'immigration, référez-vous aux sources officielles.)</p>
-            <div class="contact-links">
-                 <a href="mailto:capsverslecanada@gmail.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
-                    <i class="fas fa-envelope"></i> Envoyer un Email
-                </a>
-                <a href="https://wa.me/15794001062?text=Bonjour%2C%20j%27ai%20une%20question%20concernant%20la%20mise%20%C3%A0%20jour%20du%20Guide%20Immigration%20Canada" class="contact-links whatsapp-link" target="_blank" data-aos="fade-left" data-aos-delay="200">
-                    <i class="fab fa-whatsapp"></i> Contacter par WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
+    <section class="displayed-reviews-section">
+         <div class="container">
+             <h2>Avis Clients : Ce Qu'ils Disent du Guide Ultime</h2> <div class="reviews-list" id="reviewsList">
+                 <p style="text-align: center;">Chargement des avis...</p> </div>
+         </div>
+     </section>
+
 
     <footer>
         <div class="container">
-             <p>&copy; <span id="current-year"></span>. Cap Vers le Canada. Tous droits réservés.</p>
+            <p>&copy; <span id="current-year"></span> Cap Vers le Canada. Tous droits réservés.</p>
             <div class="footer-links">
-                <a href="#">Conditions Générales de Vente</a> |
+                <a href="#">Conditions Générales</a> |
                 <a href="#">Politique de Confidentialité</a> |
                 <a href="#">Mentions Légales</a>
             </div>
-            <p class="contact-info">Email Support: capsverslecanada@gmail.com</p>
-        </div>
+             </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Initialisation de AOS (Animation On Scroll)
-        AOS.init({
-            duration: 800,
-            once: true
+        // Met à jour l'année dans le footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- Gestion de la soumission du formulaire (JavaScript) ---
+        // POUR LA METHODE GOOGLE FORMS + SHEETY :
+        // Ce code intercepte la soumission du formulaire MAIS n'envoie PAS les données du formulaire réel
+        // à une URL backend. La soumission réelle se fait via le LIEN Google Forms.
+        // Ce JS est juste pour afficher un message de remerciement sur cette page après que l'utilisateur
+        // ait cliqué sur "Soumettre Mon Avis", donnant l'impression que l'avis a été envoyé.
+        // L'avis est en réalité soumis via le formulaire Google Forms accessible par son lien unique.
+
+
+        const reviewForm = document.getElementById('reviewForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+        // reviewsList est déjà défini plus haut pour l'affichage
+
+
+        reviewForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche la soumission par défaut du navigateur
+
+            // Valider que le formulaire est bien rempli (le navigateur le fait déjà avec 'required', mais double vérification)
+             if (!reviewForm.checkValidity()) {
+                 // Google Forms gère déjà le message d'erreur si non valide
+                 return;
+             }
+
+
+            // --- Afficher le message de remerciement et cacher le formulaire ---
+            // On simule ici le succès de la soumission côté page d'avis, même si la soumission réelle est ailleurs
+            reviewForm.style.display = 'none'; // Cache le formulaire
+            thankYouMessage.style.display = 'block'; // Affiche le message de remerciement
+
+             // Optionnel : Remonter en haut de la section pour que le message soit visible
+             thankYouMessage.scrollIntoView({ behavior: 'smooth' });
+
+             // Note: L'avis ne sera visible qu'après avoir été soumis via le lien Google Forms,
+             // que les données soient arrivées dans le Sheet, et que Sheety mette à jour son API.
+             // Il n'apparaît pas instantanément juste en cliquant sur ce bouton sur cette page.
+
+             // Optionnel : Redemander à charger les avis après un petit délai pour voir si le nouvel avis apparaît via Sheety (si le process est rapide)
+             // setTimeout(fetchAndDisplayReviews, 5000); // Attendre 5 secondes avant de tenter de recharger
+
+
         });
 
-        // Script pour mettre à jour l'année dans le footer 
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- Gestion de l'affichage des Avis (JavaScript) ---
+        // Ce code récupère les avis depuis l'API Sheety et les affiche.
+
+        // Remplacez cet URL par l'URL de votre API Sheety
+        const reviewsApiUrl = "https://api.sheety.co/df68a43984dacc921be01ef740c29f39/formulaireD'avisGuideUltimeImmigrationCanada"; // L'URL de l'API Sheety fournie par l'utilisateur
+
+        // Fonction pour créer les étoiles d'affichage (visuel, non interactif)
+         function createStarRating(rating) {
+             let starsHtml = '';
+             const maxRating = 5; // Nombre total d'étoiles
+             // S'assurer que rating est un nombre valide entre 0 et 5
+             const validRating = Math.max(0, Math.min(maxRating, parseInt(rating) || 0));
+
+             for (let i = 0; i < maxRating; i++) {
+                 if (i < validRating) {
+                     starsHtml += '★'; // Étoile pleine
+                 } else {
+                     starsHtml += '<span class="empty-star">★</span>'; // Étoile vide (utilisé une span pour pouvoir styliser)
+                 }
+             }
+             return `<div class="displayed-rating">${starsHtml}</div>`;
+         }
+
+
+        // Fonction pour afficher les avis récupérés dans la section d'affichage
+        function displayReviews(reviews) {
+            const reviewsList = document.getElementById('reviewsList'); // Le conteneur où afficher les avis
+            reviewsList.innerHTML = ''; // Vide le conteneur (enlève le message "Chargement...")
+
+            // Vérifie si le tableau d'avis est vide ou non valide
+            if (!Array.isArray(reviews) || reviews.length === 0) {
+                reviewsList.innerHTML = '<p style="text-align: center;">Aucun avis n\'est actuellement disponible pour affichage. Soyez le premier à en laisser un !</p>';
+                return;
+            }
+
+            // Parcourt chaque avis dans le tableau reçu
+            reviews.forEach(reviewData => {
+                 // --- IMPORTANT : Adaptez ces noms de clés en fonction de la structure JSON renvoyée par votre API Sheety ---
+                 // Utilisez console.log(reviewData) pour voir la structure exacte
+                 // Sheety utilise généralement les noms de colonnes du Google Sheet (sans espaces ni caractères spéciaux, en camelCase ou snake_case) comme clés.
+                 // Exemple basé sur les noms de questions de votre formulaire :
+                 const name = reviewData.votrePrenomOuInitiales; // Remplacez 'votrePrenomOuInitiales' si le nom de colonne est différent
+                 const rating = reviewData.votreNote; // Remplacez 'votreNote' si le nom de colonne est différent
+                 const reviewText = reviewData.avisSurLeGuidePartagezVotreExperience; // Remplacez si différent
+                 // Sheety renvoie la case à cocher "Obligatoire" comme true/false ou yes/no selon la configuration et le type de champ dans Sheety
+                 // Le nom de colonne pour le consentement est probablement long : "J'accepte que mon avis soit potentiellement publié (en tout ou partie, mon nom pourra être anonymisé ou réduit à mes initiales)."
+                 // Sheety le transforme en une clé comme : jaccepteQueMonAvisSoitPotentiellementPublieenToutOuPartieMonNomPourraEtreAnonymiseOuReduitAMesInitiales
+                 // Vous devez vérifier le nom exact de la clé pour le consentement dans les données renvoyées par Sheety
+                 const consent = reviewData.jaccepteQueMonAvisSoitPotentiellementPublieenToutOuPartieMonNomPourraEtreAnonymiseOuReduitAMesInitiales; // Adaptez si le nom de colonne/clé est différent
+
+                 // Vérifie si le consentement à la publication est donné et si l'avis est complet (a au moins du texte et une note valide)
+                 if (consent === true && name && reviewText && rating >=1 && rating <= 5) { // Adaptez la condition si 'consent' n'est pas un booléen true mais 'yes' string par exemple
+                    const reviewItem = document.createElement('div'); // Crée un nouvel élément div pour un avis
+                    reviewItem.classList.add('review-item'); // Ajoute la classe CSS pour le style
+
+                    const reviewHeader = document.createElement('div');
+                    reviewHeader.classList.add('review-header');
+
+                    const reviewerName = document.createElement('span');
+                    reviewerName.classList.add('reviewer-name');
+                    // Sheety utilise le nom de la colonne comme clé (sans espaces ni caractères spéciaux)
+                    // Adaptez 'nom' si le nom de votre colonne est différent
+                    reviewerName.textContent = name || 'Anonyme'; // Utilise le nom du client ou "Anonyme" si vide
+
+
+                    // Crée le HTML pour les étoiles en utilisant la note
+                    // Sheety utilise le nom de la colonne pour la note
+                    const starRatingHtml = createStarRating(reviewData.votreNote); // Adaptez 'votreNote' si le nom de votre colonne est différent
+
+
+                    reviewHeader.appendChild(reviewerName);
+                    reviewHeader.innerHTML += starRatingHtml; // Ajoute les étoiles au header (utilisation += pour ajouter le HTML généré)
+
+
+                    const reviewTextElement = document.createElement('p'); // Renommé pour éviter conflit
+                    reviewTextElement.classList.add('review-text');
+                     // Sheety utilise le nom de la colonne pour le texte de l'avis
+                    reviewTextElement.textContent = reviewText; // Adaptez si le nom de votre colonne est différent
+
+
+                    reviewItem.appendChild(reviewHeader);
+                    reviewItem.appendChild(reviewTextElement); // Utilise l'élément renommé
+
+
+                    // Optionnel : ajouter la date si Sheety la renvoie et si vous voulez l'afficher
+                    // La colonne d'horodatage de Google Forms est souvent nommée "Timestamp"
+                    /*
+                    if (reviewData.timestamp) { // Vérifiez si Sheety renvoie une clé pour la date/heure
+                        const reviewDate = document.createElement('p');
+                        reviewDate.classList.add('review-date');
+                         // Convertir le format de date/heure de Sheety si nécessaire. Console.log(reviewData.timestamp) pour voir le format.
+                        const date = new Date(reviewData.timestamp); // Asssume que Sheety renvoie un format de date valide
+                        reviewDate.textContent = `Publié le ${date.toLocaleDateString('fr-FR')}`; // Formatte la date
+                        reviewItem.appendChild(reviewDate);
+                    }
+                    */
+
+                    reviewsList.appendChild(reviewItem); // Ajoute l'avis complet à la liste d'affichage
+                 } else {
+                     console.warn("Avis ignoré pour l'affichage (consentement manquant ou données incomplètes ou note invalide):", reviewData);
+                 }
+            });
+
+             // Si après filtre (consentement), aucun avis n'est affichable
+             if (reviewsList.innerHTML === '') {
+                  reviewsList.innerHTML = '<p style="text-align: center;">Aucun avis n\'est actuellement disponible pour affichage.</p>';
+             }
+        }
+
+
+        // Fonction pour récupérer les avis depuis l'API Sheety et déclencher leur affichage
+        function fetchAndDisplayReviews() {
+             const reviewsList = document.getElementById('reviewsList');
+            reviewsList.innerHTML = '<p style="text-align: center;">Chargement des avis...</p>'; // Message de chargement
+
+             // L'URL de l'API Sheety est définie plus haut (const reviewsApiUrl)
+             if (!reviewsApiUrl || reviewsApiUrl.startsWith("[") || reviewsApiUrl.includes("nom_de_votre_feuille")) { // Vérifie si l'URL est toujours le placeholder ou une URL générique
+                 console.error("ERREUR : L'URL de l'API Sheety n'a pas été correctement configurée dans le code JavaScript.");
+                 reviewsList.innerHTML = '<p style="text-align: center; color: red;">Impossible de charger les avis : URL de configuration manquante ou invalide.</p>';
+                 return; // Arrêter si l'URL n'est pas configurée
+             }
+
+             // Utilisez fetch pour récupérer les données depuis l'API Sheety
+             // Sheety peut nécessiter un en-tête 'Authorization' si vous avez rendu l'API privée.
+             // Pour une API publique, un simple GET suffit.
+            fetch(reviewsApiUrl)
+                .then(response => {
+                     // Sheety renvoie souvent une réponse 200 même si la feuille est vide,
+                     // mais vérifions quand même si la réponse est OK (status 2xx)
+                    if (!response.ok) {
+                         console.error('Erreur lors de la récupération des avis:', response.status, response.statusText);
+                          return response.text().then(text => {
+                            console.error('Détails de l\'erreur Sheety API:', text);
+                             reviewsList.innerHTML = '<p style="text-align: center; color: red;">Une erreur est survenue lors du chargement des avis depuis Sheety.</p>';
+                            throw new Error("Récupération avis échouée depuis Sheety");
+                         });
+                    }
+                    // Sheety renvoie les données en JSON. Le format JSON exact dépend de votre feuille.
+                    // console.log("Réponse brute reçue:", response); // Pour débogage
+                    return response.json(); // Parse la réponse en JSON
+                })
+                .then(data => {
+                    // --- IMPORTANT : Adaptez cette ligne en fonction de la structure JSON renvoyée par votre API Sheety ---
+                    // Par défaut, Sheety renvoie un objet JSON dont la clé principale est le nom de votre feuille (sans espaces, en camelCase).
+                    // Par exemple, si votre feuille s'appelle "Réponses du formulaire 1", les données des avis seront dans data.réponsesDuFormulaire1
+                    // Si votre feuille s'appelle "Feuille1", ce sera data.feuille1
+                    // Console.log(data) juste ici pour voir la structure exacte renvoyée par votre API Sheety et identifier la clé correcte.
+                     console.log("Données reçues de Sheety (avant extraction feuille):", data);
+
+
+                     // --- Adaptez 'nomDeVotreFeuille' ci-dessous par la clé réelle trouvée dans le console.log ---
+                     // L'URL Sheety contient "formulaireD'avisGuideUltimeImmigrationCanada". Sheety utilise probablement cela comme nom de feuille API.
+                     const reviewsArray = data.formulaireDAvisGuideUltimeImmigrationCanada; // Tentative basée sur l'URL Sheety, Sheety peut enlever les caractères spéciaux comme '
+
+
+                     // --- Vérifiez que reviewsArray est bien un tableau avant de le passer à displayReviews ---
+                     if (Array.isArray(reviewsArray)) {
+                         displayReviews(reviewsArray); // Passe le tableau d'avis à la fonction d'affichage
+                     } else {
+                         console.error("ERREUR : L'API Sheety n'a pas renvoyé un tableau au format attendu sous la clé spécifiée.", data);
+                          reviewsList.innerHTML = '<p style="text-align: center; color: red;">Format de données inattendu de l\'API Sheety.</p>';
+                     }
+
+
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération ou du traitement des avis Sheety:', error);
+                     reviewsList.innerHTML = '<p style="text-align: center; color: red;">Impossible de charger les avis pour le moment (erreur de connexion ou de données).</p>';
+                });
+        }
+
+        // --- Exécuter la récupération et l'affichage des avis au chargement de la page ---
+        // S'assure que la fonction s'exécute après que le DOM soit complètement chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchAndDisplayReviews();
+            // Initialiser le style des étoiles du formulaire au chargement (pour le formulaire de soumission sur cette page)
+             document.querySelectorAll('.review-form .rating input[type="radio"]:checked').forEach(checkedRadioInitial => {
+              updateStarColors(checkedRadioInitial.closest('.rating'), checkedRadioInitial.value);
+         });
+        });
+
+
+         // --- Gestion du système de notation par étoiles (JavaScript) - Interactivité du FORMULAIRE ---
+        // Ce code gère l'affichage interactif des étoiles dans le FORMULAIRE (section collecte sur cette page)
+        // Le code d'affichage des étoiles dans la section .displayed-reviews-section est géré séparément dans createStarRating et displayReviews.
+
+        const ratingStarsInput = document.querySelectorAll('.review-form .rating input[type="radio"]');
+        // Les labels sont les étoiles visibles associées aux radios boutons
+        const ratingLabelsInput = document.querySelectorAll('.review-form .rating label');
+
+
+        ratingStarsInput.forEach(radio => {
+            radio.addEventListener('change', () => {
+                // Quand un radio bouton est coché, met à jour la couleur des étoiles dans son conteneur .rating
+                updateStarColors(radio.closest('.rating'), radio.value);
+            });
+        });
+
+         // Gestion du survol sur les étoiles du FORMULAIRE
+         ratingLabelsInput.forEach(label => {
+             label.addEventListener('mouseover', () => {
+                  const ratingContainer = label.closest('.rating');
+                  // Trouver l'index du label survolé DANS son conteneur .rating
+                  const labelsInThisRating = ratingContainer.querySelectorAll('label');
+                  const labelIndexInThisRating = Array.from(labelsInThisRating).indexOf(label);
+
+                 // Appliquer la couleur de survol aux étoiles de l'étoile survolée vers la gauche dans CE conteneur
+                 labelsInThisRating.forEach((lbl, index) => {
+                     // L'ordre visuel est inverse de l'ordre HTML. Survoler la 5ème étoile (index 0 HTML) colore tout. Survoler la 1ère étoile (index 4 HTML) colore juste elle.
+                     if (index >= labelIndexInThisRating) {
+                           lbl.style.color = '#ffc100'; // Couleur pleine au survol
+                     } else {
+                          lbl.style.color = '#ffc100'; // Les étoiles avant celle survolée aussi
+                     }
+                 });
+             });
+
+             label.addEventListener('mouseout', () => {
+                  const ratingContainer = label.closest('.rating');
+                  const checkedRadio = ratingContainer.querySelector('input[type="radio"]:checked'); // Vérifie si une étoile est cochée
+
+                  // Réinitialiser les couleurs à l'état normal (basé sur le radio coché ou vide)
+                  if (checkedRadio) {
+                      // S'il y a un radio coché, on applique la couleur jusqu'à l'étoile cochée
+                       updateStarColors(ratingContainer, checkedRadio.value);
+                  } else {
+                       // Si rien n'est coché, toutes les étoiles redeviennent vides
+                       ratingContainer.querySelectorAll('label').forEach(lbl => lbl.style.color = '#ccc');
+                  }
+             });
+         });
+
+
+         // Fonction utilitaire pour mettre à jour la couleur des étoiles dans un conteneur .rating
+        function updateStarColors(ratingContainer, selectedValue) {
+             const labels = ratingContainer.querySelectorAll('label');
+             // Réinitialiser toutes les étoiles d'abord
+             labels.forEach(lbl => lbl.style.color = '#ccc');
+
+             // Puis colorer les étoiles jusqu'à la note sélectionnée (en partant de la droite vers la gauche visuellement)
+             // Les labels sont dans l'ordre 5, 4, 3, 2, 1 en HTML (index 0 à 4). selectedValue est 1 à 5.
+             // Pour selectedValue = 5, on colore les 5 labels (index 0,1,2,3,4)
+             // Pour selectedValue = 4, on colore les 4 derniers labels (index 1,2,3,4)
+             // Pour selectedValue = 1, on colore le dernier label (index 4)
+              for (let i = 0; i < selectedValue; i++) {
+                  labels[i].style.color = '#ffc100';
+              }
+        }
+
+         // Appliquer la couleur initiale au chargement si une étoile est déjà cochée (pour le formulaire)
+         // Cela gère le cas où l'utilisateur reviendrait sur la page avec une sélection déjà faite (moins commun ici)
+         document.querySelectorAll('.review-form .rating input[type="radio"]:checked').forEach(checkedRadioInitial => {
+              updateStarColors(checkedRadioInitial.closest('.rating'), checkedRadioInitial.value);
+         });
+
+
     </script>
 
 </body>
